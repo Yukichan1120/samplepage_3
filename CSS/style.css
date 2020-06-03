@@ -8,8 +8,7 @@ html.wf-active {
 }
 .nav {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
     height: 60px;
     width: 100%;
     z-index: 1000;
@@ -17,21 +16,22 @@ html.wf-active {
 input {
     display: none;
 }
- 
-.mobile-menu {
-    display: none;
-}
 
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    padding: 20px 0;
-    border-bottom: 1px solid#fff;
+    justify-content: center;
+    line-height: 60px;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    width: 80%;
 }
 .nav-item{
     margin: 0 15px;
+    
 }
+
 .nav-item span {
     position: relative;
     text-align: center;
@@ -322,119 +322,68 @@ input {
     .body {
         height: auto;
     }
-    .mobile_menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60px;
-        background: rgba(0, 0, 0, 0.514);
-        z-index: 100;
-    }
-    .hamburger_m {
+    label {
         position: relative;
-    }
-    #checkBox {
-       display: none;
-    }
-    label{
-        position: relative;
-    }
-    .hamburgerIcon span{
-        display: inline-block;
-        width: 40px;
-        height: 30px;
+        left: 10px;
     }
 
-    .hamburgerIcon span i {
+    label span{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+    }
+    label span i {
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 3px;
         background-color: #fff;
         display: block;
-        transition: all .5s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    label span i:nth-child(1){
+        top:0;
+    }
+    label span i:nth-child(2){
+        top:0;
+        margin: auto;
+        bottom: 0;
+    }
+    label span i:nth-child(3){
+        bottom: 0
     }
 
-    .hamburgerIcon i:nth-child(1) {
-        top:10px;
-        left: 10px;
-    }
-    .hamburgerIcon i:nth-child(2){
-        margin: auto;
-        top: 10px;
-        left:10px;
-        bottom: 0;
-    }
-    .hamburgerIcon i:nth-child(3){
-        bottom: 0;
-        left: 10px;
-    }
-    input:checked + .hamburgerIcon i:nth-child(1) {
+    input:checked + label span i:nth-child(1) {
         margin: auto;
         transform: rotate(45deg);
-        top:10px;
-        left: 10px;
-        right: 0px;
-        bottom: 0px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
     }
-    input:checked + .hamburgerIcon i:nth-child(2){
-        display: none;
+
+    input:checked + label span i:nth-child(2) {
+        transform: rotateX(90deg);
+        top: 0;
+        bottom: 0;
     }
-    input:checked + .hamburgerIcon i:nth-child(3){
+
+    input:checked + label span i:nth-child(3) {
         margin: auto;
         transform: rotate(-45deg);
-        bottom: 0;
-        top: 10px;
+        top: 0;
         right: 0;
-    }
-    .hamburgerIcon i:nth-child(1) {
-        top:10px;
-        left: 10px;
-    }
-    .hamburgerIcon i:nth-child(2){
-        margin: auto;
-        top: 10px;
-        left:10px;
         bottom: 0;
     }
-    .hamburgerIcon i:nth-child(3){
-        bottom: 0;
-        left: 10px;
-    }
+
+
     .nav-menu {
-        display: block;
-        position: relative;
-        top: 60px;
-        left: -20%;
-        background-color: rgba(255, 255, 255, 0.897);
-        height: 100vh;
-        border-bottom: none;
-        transform: translate(-200%);
-    }
-    input:checked ＋.nav-menu {
-        display: block;
-        position: fixed;
-        top: 60px;
-        left: -20%;
-        background-color: rgba(255, 255, 255, 0.897);
-        height: 100vh;
-        border-bottom: none;
-        transform: translateX(0%);
+        display: none;
     }
 
-    .nav-menu li{
-        padding: 10px 0;
-        border-bottom: 1px solid #000;
-    }
-    .nav-menu span {
-        line-height: 2;
-        color: #000;
-    }
-
-    
     
     .jjp-btn a{
-        font-size: smaller;
+        font-size: 0.9rem;
     }
 
     .main_visualbox {
