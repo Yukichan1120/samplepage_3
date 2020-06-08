@@ -382,6 +382,7 @@ input {
         position: fixed;
         height: 100vh;
         top: 60px;
+        line-height: 40px;
         background-color: rgba(255,255,255,0.9);
         border-bottom: none;
         transition: all 0.5s ease-in-out;
