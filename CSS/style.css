@@ -435,7 +435,7 @@ input {
     }
 
     .tour_box {
-        margin: 0;
+        margin: auto;
     }
 
     .tour_item h3 {
