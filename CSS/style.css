@@ -434,6 +434,10 @@ input {
 
     }
 
+    .tour_box {
+        margin: 0;
+    }
+
     .tour_item h3 {
         padding-bottom: 2%;
     }
