@@ -386,6 +386,7 @@ input {
         border-bottom: none;
         transition: all 0.5s ease-in-out;
         transform: translateX(-200%);
+        overflow-y: scroll;
     }
     .nav-menu span {
         color: #000;
