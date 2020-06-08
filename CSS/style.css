@@ -393,7 +393,7 @@ input {
     }
     .nav-menu li {
         border-bottom: 1px solid #000;
-        padding: 15px 0;
+        padding: 10px 0;
     }
 
     input:checked ~ .nav-menu {
