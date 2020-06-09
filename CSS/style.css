@@ -444,7 +444,17 @@ input {
     .tour_img {
         padding-bottom: 30px;
         width: 100%;
+        position: relative;
     }
+    .tour_img img {
+        position: absolute; 
+        top: 50%;
+        right: 0;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(50%);
+    }
+
 
     .concept_box {
         height: 100%;
