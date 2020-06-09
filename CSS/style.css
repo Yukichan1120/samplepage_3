@@ -444,6 +444,7 @@ input {
     .tour_img {
         padding-bottom: 30px;
         width: 100%;
+        margin: 0 auto;
     }
 
     .concept_box {
