@@ -435,7 +435,7 @@ input {
     }
 
     .tour_box {
-        margin: 0 auto;
+        margin: 0;
     }
 
     .tour_item h3 {
@@ -443,6 +443,7 @@ input {
     }
     .tour_img {
         padding-bottom: 30px;
+        width: 100%;
     }
 
     .concept_box {
