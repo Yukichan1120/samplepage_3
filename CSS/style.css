@@ -445,7 +445,8 @@ input {
     }
     .tour_img {
         padding-bottom: 30px;
-        width: 100%;  
+        max-width: 200px;
+        margin: 0 auto;  
     }
     
     .concept_box {
