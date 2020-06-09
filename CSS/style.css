@@ -433,7 +433,9 @@ input {
         margin: 20px auto;
 
     }
-
+    .our_tour {
+        display: block;
+    }
     .tour_box {
         margin: 0;
     }
